@@ -61,3 +61,52 @@ run '~/.tmux/plugins/tpm/tpm'
 ![image](https://user-images.githubusercontent.com/5285547/204092964-89683a1b-2437-4516-8787-fe1a29d7464a.png)
 
 ![image](https://user-images.githubusercontent.com/5285547/204092988-e7cf5599-2da2-4652-95c3-4bf795dce198.png)
+
+---
+
+## Bonus 
+
+### Install Ohmyzsh
+
+[OhMyZsh](https://github.com/ohmyzsh/ohmyzsh)
+
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+### Add some plugins
+
+```bash
+cd ~/.oh-my-zsh/custom/plugins
+git clone https://github.com/zsh-users/zsh-autosuggestions.git
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+```
+
+Now, edit your ~/.zshrc file to include them.
+
+```plain
+plugins=(
+    git
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+)
+```
+
+Restart your Zsh with source ~/.zshrc.
+
+### Powerlevel10k theme
+
+Install
+
+```bash
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+```
+
+Then, add powerlevel10k to ~/.zshrc
+
+```bash
+ZSH_THEME="powerlevel10k/powerlevel10k"
+```
+
+
+
