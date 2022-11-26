@@ -35,9 +35,9 @@ run '~/.tmux/plugins/tpm/tpm'
 
 ## Config 
 
-- Click and drag with the Left Mouse Button to select some text and copy it into the primary selection
-- Double-click the Left Mouse Button on a word to select the word and copy it into the primary selection
-- Triple-click the Left Mouse Button on a line to select the whole line and copy it into the primary selection
-- Click the Middle Mouse Button to paste from the primary selection
-- Ctrl + Shift + c to copy the selection into the clipboard
-- Ctrl + Shift + v to paste from the clipboard  
+- **Click and drag** with the **Left Mouse Button** to select some text and copy it into the primary selection
+- **Double-click** the **Left Mouse Butto**n on a word to select the word and copy it into the primary selection
+- **Triple-click** the **Left Mouse Butto**n on a line to select the whole line and copy it into the primary selection
+- Click the **Middle Mouse Button** to paste from the primary selection
+- **Ctrl + Shift + c** to copy the selection into the clipboard
+- **Ctrl + Shift + v** to paste from the clipboard  
