@@ -1,4 +1,4 @@
-# tmux_config
+# Tmux config plus zsh themeing 
 
 Nice tmux config :)
 
