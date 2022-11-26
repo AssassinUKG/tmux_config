@@ -41,3 +41,16 @@ run '~/.tmux/plugins/tpm/tpm'
 - Click the **Middle Mouse Button** to paste from the primary selection
 - **Ctrl + Shift + c** to copy the selection into the clipboard
 - **Ctrl + Shift + v** to paste from the clipboard  
+
+
+Cheatshhet
+
+![image](https://user-images.githubusercontent.com/5285547/204092916-96acdb42-8eca-486a-8048-3de37bc8bcbd.png)
+
+![image](https://user-images.githubusercontent.com/5285547/204092927-303cc96d-9a4f-4862-bf80-2b75094f0927.png)
+
+![image](https://user-images.githubusercontent.com/5285547/204092941-84e22638-7879-486e-8c82-7df7a4612f53.png)
+
+![image](https://user-images.githubusercontent.com/5285547/204092964-89683a1b-2437-4516-8787-fe1a29d7464a.png)
+
+![image](https://user-images.githubusercontent.com/5285547/204092988-e7cf5599-2da2-4652-95c3-4bf795dce198.png)
