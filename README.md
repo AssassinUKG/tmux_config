@@ -74,6 +74,12 @@ run '~/.tmux/plugins/tpm/tpm'
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
+Set default shell
+
+```bash
+chsh -s $(which zsh)
+```
+
 ### Add some plugins
 
 ```bash
