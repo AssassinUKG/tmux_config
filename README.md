@@ -2,6 +2,12 @@
 
 Nice tmux config :)
 
+
+## Usage
+
+Copy the tmux.conf into "~/.tmux.conf" save and reload your termainal. 
+
+
 ```bash
 # ~/.tmux.conf
 set -g mouse on
@@ -26,3 +32,12 @@ bind -T copy-mode-vi C-c send -X copy-pipe-no-clear "xsel -i --clipboard"
 # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
 run '~/.tmux/plugins/tpm/tpm'
 ```
+
+## Config 
+
+- Click and drag with the Left Mouse Button to select some text and copy it into the primary selection
+- Double-click the Left Mouse Button on a word to select the word and copy it into the primary selection
+- Triple-click the Left Mouse Button on a line to select the whole line and copy it into the primary selection
+- Click the Middle Mouse Button to paste from the primary selection
+- Ctrl + Shift + c to copy the selection into the clipboard
+- Ctrl + Shift + v to paste from the clipboard  
