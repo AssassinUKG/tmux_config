@@ -43,7 +43,14 @@ run '~/.tmux/plugins/tpm/tpm'
 - **Ctrl + Shift + v** to paste from the clipboard  
 
 
-Cheatshhet
+## Screenshots
+
+![image](https://user-images.githubusercontent.com/5285547/204093029-cc8b3b01-d03f-4a77-b3a3-01acda40bea5.png)
+
+![image](https://user-images.githubusercontent.com/5285547/204093045-5fc6c4ca-f8a9-4368-9464-29cfd238c4f2.png)
+
+
+## Cheatshhet
 
 ![image](https://user-images.githubusercontent.com/5285547/204092916-96acdb42-8eca-486a-8048-3de37bc8bcbd.png)
 
