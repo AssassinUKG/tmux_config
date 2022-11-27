@@ -114,5 +114,11 @@ Then, add powerlevel10k to ~/.zshrc
 ZSH_THEME="powerlevel10k/powerlevel10k"
 ```
 
+Configure
+
+```
+$ p10k configure
+```
+
 
 
