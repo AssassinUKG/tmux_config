@@ -116,6 +116,14 @@ Add correct font
 [MesloLGS NF Italic.ttf](https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf)  
 [MesloLGS NF Bold Italic.ttf](https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf)   
 
+cli install
+
+```
+make folder in ~/.local/share/fonts
+cp the fonts to the location and refresh the font cache. 
+
+$ fc-cache -f -v
+```
 
 
 Then, add powerlevel10k to ~/.zshrc
