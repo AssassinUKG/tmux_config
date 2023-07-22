@@ -60,6 +60,8 @@ set -g @dracula-day-month true
 set -g @dracula-show-timezone false
 set -g @dracula-refresh-rate 10
 
+# enable if powerline 10k installled
+#set -g @dracula-show-powerline true
 
 # Set tpm
 set -g @plugin 'tmux-plugins/tpm'
