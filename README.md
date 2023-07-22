@@ -5,9 +5,12 @@ Nice tmux config :)
 
 ## Usage
 
+Install tpm
+```
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
 Copy the tmux.conf into "~/.tmux.conf" save and reload your termainal. 
-
-
 ```bash
 # Richard Jones, 22/07/2023 - Custom Tmux config
 ## General Settings
@@ -69,11 +72,6 @@ set -g @plugin 'tmux-plugins/tpm'
 
 # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
 run '~/.tmux/plugins/tpm/tpm'
-```
-
-Install tpm
-```
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
 Install Dracula Theme
