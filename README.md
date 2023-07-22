@@ -9,25 +9,61 @@ Copy the tmux.conf into "~/.tmux.conf" save and reload your termainal.
 
 
 ```bash
-# ~/.tmux.conf
+# Richard Jones, 22/07/2023 - Custom Tmux config
+## General Settings
+
+set -g default-terminal "xterm-256color"
+set -g history-limit 5000
+setw -g xterm-keys on
+set -s escape-time 10                     # faster command sequences
+set -sg repeat-time 600                   # increase repeat timeout
+set -s focus-events on
+
+## Change the default key binding from Ctrl+b to Ctrl+a
+unbind C-b
+set -g prefix C-a
+
+## mouse support 
 set -g mouse on
 
-# These bindings are for X Windows only. If you're using a different
-# window system you have to replace the `xsel` commands with something
-# else. See https://github.com/tmux/tmux/wiki/Clipboard#available-tools
-bind -T copy-mode    DoubleClick1Pane select-pane \; send -X select-word \; send -X copy-pipe-no-clear "xsel -i"
-bind -T copy-mode-vi DoubleClick1Pane select-pane \; send -X select-word \; send -X copy-pipe-no-clear "xsel -i"
-bind -n DoubleClick1Pane select-pane \; copy-mode -M \; send -X select-word \; send -X copy-pipe-no-clear "xsel -i"
-bind -T copy-mode    TripleClick1Pane select-pane \; send -X select-line \; send -X copy-pipe-no-clear "xsel -i"
-bind -T copy-mode-vi TripleClick1Pane select-pane \; send -X select-line \; send -X copy-pipe-no-clear "xsel -i"
-bind -n TripleClick1Pane select-pane \; copy-mode -M \; send -X select-line \; send -X copy-pipe-no-clear "xsel -i"
-bind -n MouseDown2Pane run "tmux set-buffer -b primary_selection \"$(xsel -o)\"; tmux paste-buffer -b primary_selection; tmux delete-buffer -b primary_selection"
+## Hot reload Ctrl+r
+bind-key r source-file ~/.tmux.conf \; display-message "~/.tmux.conf reloaded"
 
+## Change split panes to v,h
+bind h split-window -h
+bind v split-window -v
+unbind '"'
+unbind %
+
+## Display
+
+set -g base-index 1           # start windows numbering at 1
+setw -g pane-base-index 1     # make pane numbering consistent with windows
+setw -g automatic-rename on   # rename window to reflect current program
+set -g renumber-windows on    # renumber windows when a window is closed
+set -g set-titles on          # set terminal title
+
+## Activity
+set -g monitor-activity on
+set -g visual-activity off
+
+
+# Dracula theme
+set -g @plugin 'dracula/tmux'
+
+set -g @dracula-show-battery true
+set -g @dracula-show-powerline false
+set -g @dracula-plugins "cpu-usage ram-usage time battery"
+set -g @dracula-battery-label ""
+set -g @dracula-military-time true
+set -g @dracula-day-month true
+set -g @dracula-show-timezone false
+set -g @dracula-refresh-rate 10
+
+
+# Set tpm
 set -g @plugin 'tmux-plugins/tpm'
-set -g @plugin 'tmux-plugins/tmux-yank'
-set -g @yank_action 'copy-pipe-no-clear'
-bind -T copy-mode    C-c send -X copy-pipe-no-clear "xsel -i --clipboard"
-bind -T copy-mode-vi C-c send -X copy-pipe-no-clear "xsel -i --clipboard"
+
 
 # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
 run '~/.tmux/plugins/tpm/tpm'
@@ -37,6 +73,13 @@ Install tpm
 ```
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
+
+Install Dracula Theme
+```
+https://draculatheme.com/tmux
+```
+
+![image](https://github.com/AssassinUKG/tmux_config/assets/5285547/0f9dd969-6726-4b14-bcf5-5c2c67e875f8)
 
 
 ## Config 
