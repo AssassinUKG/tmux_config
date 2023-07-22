@@ -33,6 +33,12 @@ bind -T copy-mode-vi C-c send -X copy-pipe-no-clear "xsel -i --clipboard"
 run '~/.tmux/plugins/tpm/tpm'
 ```
 
+Install tpm
+```
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
+
 ## Config 
 
 - **Click and drag** with the **Left Mouse Button** to select some text and copy it into the primary selection
