@@ -50,7 +50,7 @@ run '~/.tmux/plugins/tpm/tpm'
 ![image](https://user-images.githubusercontent.com/5285547/204093045-5fc6c4ca-f8a9-4368-9464-29cfd238c4f2.png)
 
 
-## Cheatshhet
+## Cheatsheet
 
 ![image](https://user-images.githubusercontent.com/5285547/204092916-96acdb42-8eca-486a-8048-3de37bc8bcbd.png)
 
