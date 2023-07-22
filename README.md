@@ -69,6 +69,8 @@ set -g @dracula-refresh-rate 10
 # Set tpm
 set -g @plugin 'tmux-plugins/tpm'
 
+# copy to xsel
+bind -y run -b 'tmux save-buffer - | sxel -i -b'
 
 # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
 run '~/.tmux/plugins/tpm/tpm'
