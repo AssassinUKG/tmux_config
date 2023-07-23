@@ -88,11 +88,11 @@ https://draculatheme.com/tmux
 Prefix
 : `Ctrl + a`
 
->Windows 
+>Windows  
 split verticle : `prefix + v`  
 split horizontal : `prefix + h`
 
->Others
+>Others  
 Hot tmux config reload
 : `reload = prefix + r`
 
