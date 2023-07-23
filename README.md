@@ -10,6 +10,20 @@ Install tpm
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
+Custom keys
+
+# Prefix
+`Ctrl + a`
+
+# Windows 
+```
+split verticle = prefix + v
+split horizontal = prefix + h
+```
+
+# Hot tmux config reload
+`reload = prefix + r`
+
 Copy the tmux.conf into "~/.tmux.conf" save and reload your termainal. 
 ```bash
 # Richard Jones, 22/07/2023 - Custom Tmux config
@@ -70,7 +84,7 @@ set -g @dracula-refresh-rate 10
 set -g @plugin 'tmux-plugins/tpm'
 
 # copy to xsel
-bind -y run -b 'tmux save-buffer - | sxel -i -b'
+bind -y run -b 'tmux save-buffer - | xsel -i -b'
 
 # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
 run '~/.tmux/plugins/tpm/tpm'
