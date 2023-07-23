@@ -90,7 +90,7 @@ Prefix
 
 Windows 
 
-split verticle : `prefix + v`
+split verticle : `prefix + v`  
 split horizontal : `prefix + h`
 
 Hot tmux config reload
