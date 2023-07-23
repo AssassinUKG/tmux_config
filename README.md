@@ -84,22 +84,15 @@ https://draculatheme.com/tmux
 ![image](https://github.com/AssassinUKG/tmux_config/assets/5285547/0f9dd969-6726-4b14-bcf5-5c2c67e875f8)
 
 ## Custom keys
-
->Prefix
-
+###Prefix
 `Ctrl + a`
 
->Windows
-split verticle :
-
-`prefix + v`  
-
->split horizontal
-
-`prefix + h`
+###Windows
+split verticle : `prefix + v`  
+split horizontal : `prefix + h`
 
 >Others
->Hot tmux config reload
+### Hot tmux config reload
 
 `reload = prefix + r`
 
