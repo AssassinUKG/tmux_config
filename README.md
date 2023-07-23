@@ -87,7 +87,7 @@ https://draculatheme.com/tmux
 
 >Prefix
 
-: `Ctrl + a`
+`Ctrl + a`
 
 >Windows
 
@@ -95,8 +95,7 @@ split verticle : `prefix + v`
 split horizontal : `prefix + h`
 
 >Others
-
-Hot tmux config reload
+>Hot tmux config reload
 : `reload = prefix + r`
 
 ## Cheatsheet (Normal tmux)
