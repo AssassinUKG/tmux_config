@@ -90,13 +90,18 @@ https://draculatheme.com/tmux
 `Ctrl + a`
 
 >Windows
+split verticle :
 
-split verticle : `prefix + v`  
-split horizontal : `prefix + h`
+`prefix + v`  
+
+>split horizontal
+
+`prefix + h`
 
 >Others
 >Hot tmux config reload
-: `reload = prefix + r`
+
+`reload = prefix + r`
 
 ## Cheatsheet (Normal tmux)
 ### Toggle pane zoom
