@@ -96,6 +96,14 @@ split horizontal : `prefix + h`
 Hot tmux config reload
 : `reload = prefix + r`
 
+## Cheatsheet (Normal tmux)
+### Toggle pane zoom
+`prefix + z`
+
+### Convert pane into a window
+`prefix + !`
+
+
 ## Config 
 
 - **Click and drag** with the **Left Mouse Button** to select some text and copy it into the primary selection
