@@ -10,20 +10,6 @@ Install tpm
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
-Custom keys
-
-# Prefix
-`Ctrl + a`
-
-# Windows 
-```
-split verticle = prefix + v
-split horizontal = prefix + h
-```
-
-# Hot tmux config reload
-`reload = prefix + r`
-
 Copy the tmux.conf into "~/.tmux.conf" save and reload your termainal. 
 ```bash
 # Richard Jones, 22/07/2023 - Custom Tmux config
@@ -97,6 +83,19 @@ https://draculatheme.com/tmux
 
 ![image](https://github.com/AssassinUKG/tmux_config/assets/5285547/0f9dd969-6726-4b14-bcf5-5c2c67e875f8)
 
+## Custom keys
+
+### Prefix
+`Ctrl + a`
+
+### Windows 
+```
+split verticle = prefix + v
+split horizontal = prefix + h
+```
+
+### Hot tmux config reload
+`reload = prefix + r`
 
 ## Config 
 
