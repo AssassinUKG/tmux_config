@@ -85,7 +85,8 @@ https://draculatheme.com/tmux
 
 ## Custom keys
 
-Prefix
+>Prefix
+
 : `Ctrl + a`
 
 >Windows
