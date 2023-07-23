@@ -87,8 +87,8 @@ https://draculatheme.com/tmux
 ###Prefix
 `Ctrl + a`
 
-###Windows
-split verticle : `prefix + v`  
+### Windows
+split verticle : `prefix + v`    
 split horizontal : `prefix + h`
 
 >Others
