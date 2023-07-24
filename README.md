@@ -10,6 +10,13 @@ Install tpm
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
+Set tmux config. 
+```
+# Start tmux, press prefix keys then :
+# enter...
+source-file ~/.tmux.conf
+```
+
 Copy the tmux.conf into "~/.tmux.conf" save and reload your termainal. 
 ```bash
 # Richard Jones, 22/07/2023 - Custom Tmux config
