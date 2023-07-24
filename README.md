@@ -76,8 +76,8 @@ set -g @dracula-refresh-rate 10
 # Set tpm
 set -g @plugin 'tmux-plugins/tpm'
 
-# copy to xsel (kali
-if -b 'command -v xsel > /dev/null 2>&1' 'bind -y run -b "tmux save-buffer - | xsel -i -b"'
+# copy to xsel (Enable if on kali) 
+#if-shell -b 'command -v xsel > /dev/null 2>&1' 'bind -y run -b "tmux save-buffer - | xsel -i -b"'
 
 # WSL
 if-shell -b 'test -n "$WSLENV"' 'bind-key -T copy-mode-vi Enter send-keys -X copy-pipe-and-cancel clip.exe'
