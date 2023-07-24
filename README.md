@@ -69,8 +69,12 @@ set -g @dracula-refresh-rate 10
 # Set tpm
 set -g @plugin 'tmux-plugins/tpm'
 
-# copy to xsel
-bind -y run -b 'tmux save-buffer - | xsel -i -b'
+# copy to xsel (kali
+if -b 'command -v xsel > /dev/null 2>&1' 'bind -y run -b "tmux save-buffer - | xsel -i -b"'
+
+# WSL
+if-shell -b 'test -n "$WSLENV"' 'bind-key -T copy-mode-vi Enter send-keys -X copy-pipe-and-cancel clip.exe'
+if-shell -b 'test -n "$WSLENV"' 'bind-key -T copy-mode-vi MouseDragEnd1Pane send-keys -X copy-pipe-and-cancel clip.exe'
 
 # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
 run '~/.tmux/plugins/tpm/tpm'
